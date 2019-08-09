@@ -1,0 +1,40 @@
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+  <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+    <form class="form ng-untouched ng-pristine ng-valid" [formGroup]="loginForm" (submit)="login($event)">
+      <div class="card card-login">
+        <div class="card-header ">
+          <div class="card-header ">
+            <h3 class="header text-center">Login</h3>
+          </div>
+        </div>
+        <div class="card-body ">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="nc-icon nc-single-02"></i>
+              </span>
+            </div>
+            <input class="form-control" placeholder="Email..." type="text" formControlName="email">
+          </div>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                <i class="nc-icon nc-key-25"></i>
+              </span>
+            </div>
+            <input class="form-control" placeholder="Password" type="password" formControlName="password">
+          </div>
+          <br>
+        </div>
+        <div class="card-footer ">
+          <button class="btn btn-round btn-block mb-3">Login</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
